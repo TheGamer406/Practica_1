@@ -1,0 +1,14 @@
+{
+    "development": {
+      "username": "veteUserAppBD",
+      "password": "admin1234",
+      "database": "veterinariaPatitas",
+      "host": "localhost",
+      "dialect": "mssql",
+      "dialectOptions": {
+        "options": {
+          "encrypt": false
+        }
+      }
+    }
+  }

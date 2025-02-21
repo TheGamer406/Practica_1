@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================= */
+/* 🌟 ESTILOS PERSONALIZADOS 🌟 */
+/* ============================= */
+
+/* 🌑 Modo Oscuro Automático */
+:root {
+  --primary-color: #1e40af; /* Azul intenso */
+  --secondary-color: #9333ea; /* Morado vibrante */
+  --background-light: #f9fafb; /* Gris muy claro */
+  --background-dark: #111827; /* Gris oscuro */
+  --text-light: #1f2937; /* Gris oscuro */
+  --text-dark: #e5e7eb; /* Gris claro */
+}
+
+/* 💡 Configuración del modo claro y oscuro */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: all 0.3s ease-in-out;
+}
+
+.dark {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+/* 🌍 Estilo Global para el Contenedor Principal */
+.container {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+/* 📌 NAVBAR */
+.navbar {
+  @apply bg-white dark:bg-gray-900 shadow-md fixed w-full top-0 z-50;
+}
+
+.navbar ul {
+  @apply flex justify-center space-x-6;
+}
+
+.navbar a {
+  @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300;
+}
+
+/* 📌 FOOTER */
+.footer {
+  @apply bg-gray-200 dark:bg-gray-800 text-center py-4 mt-10;
+}
+
+.footer p {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+/* 📌 BOTONES PERSONALIZADOS */
+.btn-primary {
+  @apply bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 transition-all;
+}
+
+.btn-secondary {
+  @apply bg-purple-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-purple-700 transition-all;
+}
+
+/* 📌 TARJETAS */
+.card {
+  @apply bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 transition-all;
+}
+
+/* 📌 ANIMACIONES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
