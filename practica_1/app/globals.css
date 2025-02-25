@@ -2,21 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ============================= */
-/* 🌟 ESTILOS PERSONALIZADOS 🌟 */
-/* ============================= */
-
-/* 🌑 Modo Oscuro Automático */
 :root {
-  --primary-color: #1e40af; /* Azul intenso */
-  --secondary-color: #9333ea; /* Morado vibrante */
-  --background-light: #f9fafb; /* Gris muy claro */
-  --background-dark: #111827; /* Gris oscuro */
-  --text-light: #1f2937; /* Gris oscuro */
-  --text-dark: #e5e7eb; /* Gris claro */
+  --primary-color: #1e40af;
+  --secondary-color: #9333ea;
+  --background-light: #f9fafb;
+  --background-dark: #111827;
+  --text-light: #1f2937;
+  --text-dark: #e5e7eb;
 }
 
-/* 💡 Configuración del modo claro y oscuro */
 html {
   scroll-behavior: smooth;
   font-family: 'Inter', sans-serif;
